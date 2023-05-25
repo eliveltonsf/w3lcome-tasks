@@ -211,7 +211,7 @@ Insomina
 ⌨️ Documentation of routes in swagger
 </h2>
 
-after starting the project, you will have access to an endpoint configured to document and test all the functioning of your routes.
+After starting the project, you will have access to an endpoint configured to document and test all the functioning of your routes.
 
 <blockquote>
   http://localhost:3333/api-docs/

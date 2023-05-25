@@ -10,9 +10,11 @@
 
 <h3 id="description" align="center">
   Task Control #W3lcomeTasks
-  
-  <br/>
+</h3>
 
+<br/>
+
+<h3>
   <p id="badges" align="center">
     <img src="https://img.shields.io/badge/-NODE-000?style=for-the-badge&logo=nodedotjs"/>
     <img src="https://img.shields.io/badge/-EXPRESS-000?style=for-the-badge&logo=EXPRESS"/>
