@@ -1,0 +1,63 @@
+@import "./patterns/layout";
+@import "./patterns/colors";
+@import "./patterns/spacing";
+@import "./patterns/typography";
+
+.listTask {
+  color: $white-normal;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  li {
+    div {
+      height: auto;
+      border-radius: 7px;
+    }
+  }
+}
+
+.pageOptionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.pageOptions {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background: $gray-5;
+  border-radius: 4px;
+  color: $white-normal;
+  margin: 24px 16px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.currentPage {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background: linear-gradient(68.04deg, #f89629 0.59%, #f3b10c 99.35%);
+  border-radius: 4px;
+  color: $white-normal;
+  margin: 24px 16px;
+
+  li {
+    background: linear-gradient(68.04deg, #f89629 0.59%, #f3b10c 99.35%);
+    &:hover {
+      opacity: none;
+    }
+  }
+}
