@@ -1,0 +1,235 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API for task handling",
+    "description": "This api performs a complete crud of tasks, with validations in case values are not informed correctly and in the listing it has an implemented pagination flow.",
+    "termsOfService": "https://www.cff.org.br/userfiles/TERMO%20DE%20COMPROMISSO.pdf",
+    "contact": {
+      "name": "Elivelton Ferreira",
+      "url": "https://wa.me/5585996375272",
+      "email": "eliveltonferreira.dev@gmail.com"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333/",
+      "description": "Api local"
+    }
+  ],
+  "paths": {
+    "/tasks": {
+      "post": {
+        "summary": "Register new task",
+        "description": "This route will be responsible for registering the new task, receiving only its title",
+        "tags": ["Tasks"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schema/createTask"
+              },
+              "examples": {
+                "task": {
+                  "value": {
+                    "title": "Melhorar usabilidade no site principal"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Task already exists!"
+          },
+          "201": {
+            "description": "Task created successfully!",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schema/responseTask"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "List tasks with pagination control",
+        "description": "This route will be responsible for receiving an offset parameter, informing the page to be listed, if you want a limit different from the standard limit of 5 items per page, you must inform a new limit as well.",
+        "tags": ["Tasks"],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of tasks per page"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Page to return",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tasks successfully returned!",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schema/responseTaskFindByPage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tasks/{id}": {
+      "patch": {
+        "summary": "Change a task by ID",
+        "description": "This route will be responsible for receiving your update option and changing the task according to the informed ID",
+        "tags": ["Tasks"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schema/putTask"
+              },
+              "examples": {
+                "change-title-and-status": {
+                  "value": {
+                    "title": "novo titulo",
+                    "isDone": true
+                  }
+                },
+                "change-title": {
+                  "value": {
+                    "title": "novo titulo"
+                  }
+                },
+                "change-status": {
+                  "value": {
+                    "isDone": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Task identification code",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Task created successfully!",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schema/responseTask"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a task by ID",
+        "description": "This route will be responsible for receiving the id of a task and removing",
+        "tags": ["Tasks"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Task identification code",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Task removed successfully!"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schema": {
+      "createTask": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          }
+        }
+      },
+      "responseTask": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "isDone": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "responseTaskFindByPage": {
+        "type": "object",
+        "properties": {
+          "tasks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isDone": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "totalPages": {
+            "type": "number"
+          }
+        }
+      },
+      "putTask": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          }
+        }
+      },
+      "deleteTask": {
+        "type": "object",
+        "properties": {
+          "message": "Task removed successfully!"
+        }
+      }
+    }
+  }
+}
