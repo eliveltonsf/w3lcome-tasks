@@ -1,0 +1,22 @@
+@import "./patterns/layout";
+@import "./patterns/colors";
+@import "./patterns/spacing";
+@import "./patterns/typography";
+
+.main {
+  max-width: $container-l;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @include responsive(s) {
+    flex-direction: column;
+    overflow: auto;
+  }
+}
