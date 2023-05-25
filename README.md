@@ -89,6 +89,9 @@ OBS: to run this command you must be inside the w3lcome-tasks repository
 # Enter in the repository server
 $ cd server
 
+# Install the dependencies
+$ yarn install
+
 # Start application server
 $ yarn dev
 ```
@@ -105,6 +108,9 @@ repository
 ```bash
 # Enter in the repository client
 $ cd client
+
+# Install the dependencies
+$ yarn install
 
 # Start application client
 $ yarn dev
