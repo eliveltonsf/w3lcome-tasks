@@ -1,0 +1,23 @@
+@import "./patterns/layout";
+@import "./patterns/colors";
+@import "./patterns/spacing";
+@import "./patterns/typography";
+
+.taskInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #242c39;
+  opacity: 0.9;
+  border-radius: 7px;
+  width: 100%;
+  padding: 12px 24px;
+
+  span {
+    margin-left: 24px;
+  }
+}
+
+.isChecked {
+  color: $primary-normal;
+}
