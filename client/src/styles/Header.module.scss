@@ -1,0 +1,28 @@
+@import "./patterns/layout";
+@import "./patterns/colors";
+@import "./patterns/spacing";
+@import "./patterns/typography";
+
+.logoTask {
+  img {
+    width: 130px;
+    height: 130px;
+  }
+
+  @include responsive(s) {
+    text-align: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.profile {
+  text-align: right;
+
+  @include responsive(s) {
+    text-align: center;
+  }
+}
