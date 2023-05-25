@@ -1,0 +1,40 @@
+@import "./patterns/layout";
+@import "./patterns/colors";
+@import "./patterns/spacing";
+@import "./patterns/typography";
+
+.input {
+  accent-color: $primary-normal;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  border: 1px solid #9ea0a3;
+  padding: 12px 24px;
+  transition: 0.3 ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $primary-normal; /* That'll show 'em */
+  }
+}
+
+.error {
+  border: 1px solid $red-normal;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  padding: 12px 24px;
+  transition: 0.3s ease;
+
+  &:focus {
+    border: 1px solid #9ea0a3;
+    outline: 1px solid #9ea0a3; /* That'll show 'em */
+  }
+
+  &::placeholder {
+    color: $red-normal;
+  }
+}
