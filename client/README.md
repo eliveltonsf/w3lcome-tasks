@@ -34,9 +34,7 @@ Before starting the development of the web application, a moment of research and
 
 Follows access to project figma workspace
 
-<blockquote>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FObqIetWZGpzZ0ceN7aPgwK%2FW3lcome-Tasks%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3D0fGNKcHv1LW8JztN-1" allowfullscreen></iframe>
-</blockquote>
+[W3lcome-tasks figma](https://www.figma.com/file/ObqIetWZGpzZ0ceN7aPgwK/W3lcome-Tasks?type=design&node-id=0%3A1&t=2O9x1OjA15U9dBtp-1)
 
 <br />
 
