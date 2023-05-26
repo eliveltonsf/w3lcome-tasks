@@ -110,15 +110,13 @@ http://localhost:3000
 <h3 id="responsive" name="responsive">
 :iphone: Responsive
 </h3>
-<br />
-<h4>User identification, home task and Error registering</h4>
+
+<h3>User identification, home task and Error registering</h3>
 <img src="https://uploaddeimagens.com.br/images/004/482/607/original/responsive_1.png?1685061052"/>
 
-<br />
-<h4>Create task, Delete and Upload task</h4>
+<h3>Create task, Delete and Upload task</h3>
 <img src="https://uploaddeimagens.com.br/images/004/482/620/original/responsivo_2.png?1685061428"/>
 
-<br />
 <hr>
 
 Made with 🧡 By Elivelton Ferreira. [Get in touch!](https://www.linkedin.com/in/eliveltonsf/) :calling:
