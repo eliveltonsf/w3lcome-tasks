@@ -12,6 +12,7 @@
    <img src="https://img.shields.io/badge/-REACT-000?style=for-the-badge&logo=REACT"/>
     <img src="https://img.shields.io/badge/typescript-000?style=for-the-badge&logo=typescript"/>
     <img src="https://img.shields.io/badge/Sass-000?style=for-the-badge&logo=sass"/>
+    <img src="https://img.shields.io/badge/figma-000?style=for-the-badge&logo=figma"/>
 </p>
 
 <br />
@@ -25,6 +26,20 @@
 - [Sass](https://sass-lang.com/) styling with a dynamic responsive pattern
 
 <br />
+<h2 id="technologies" name="technologies">
+🎯 What I learned from this project
+</h2>
+
+Before starting the development of the web application, a moment of research and elaboration of an adequate design was taken using UX and UI design patterns in the Figma platform.
+
+Follows access to project figma workspace
+
+<blockquote>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FObqIetWZGpzZ0ceN7aPgwK%2FW3lcome-Tasks%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3D0fGNKcHv1LW8JztN-1" allowfullscreen></iframe>
+</blockquote>
+
+<br />
+
 <h2 id="technologies" name="technologies">
 ⌨️ Prerequisites
 </h2>
@@ -98,16 +113,12 @@ http://localhost:3000
 :iphone: Responsive
 </h3>
 <br />
-<h4>User identification and home task</h4>
-<img src="https://uploaddeimagens.com.br/images/004/425/360/full/mobile2.png?1681215897"/>
+<h4>User identification, home task and Error registering</h4>
+<img src="https://uploaddeimagens.com.br/images/004/482/607/original/responsive_1.png?1685061052"/>
 
 <br />
-<h4>Error registering and create task</h4>
-<img src="https://uploaddeimagens.com.br/images/004/425/361/full/mobile3.png?1681215903"/>
-
-<br />
-<h4>Update and delete task</h4>
-<img src="https://uploaddeimagens.com.br/images/004/425/361/full/mobile3.png?1681215903"/>
+<h4>Create task, Delete and Upload task</h4>
+<img src="https://uploaddeimagens.com.br/images/004/482/620/original/responsivo_2.png?1685061428"/>
 
 <br />
 <hr>
