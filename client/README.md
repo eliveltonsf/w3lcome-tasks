@@ -27,7 +27,7 @@
 
 <br />
 <h2 id="technologies" name="technologies">
-🎯 What I learned from this project
+🎯 Design in project
 </h2>
 
 Before starting the development of the web application, a moment of research and elaboration of an adequate design was taken using UX and UI design patterns in the Figma platform.
